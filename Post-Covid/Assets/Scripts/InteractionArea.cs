@@ -9,7 +9,6 @@ public class InteractionArea : MonoBehaviour
 
     // When the collider is entered
     private void OnTriggerEnter(Collider other) {
-
         // Ignore if not the player
         if (other.gameObject.tag != "Player") {
             return;
