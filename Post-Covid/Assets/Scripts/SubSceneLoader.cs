@@ -7,59 +7,36 @@ using Unity.Transforms;
 
 
 public class SubSceneLoader : ComponentSystem {
-
     
     private SceneSystem sceneSystem;
+    private GameObject player;
+
+    private readonly float load_distance = 60f;
 
     protected override void OnCreate() {
         sceneSystem = World.GetOrCreateSystem<SceneSystem>();
     }
 
+    protected override void OnStartRunning() {
+        // Try to get player from PlayerFinder
+        player = PlayerFinder.FindPlayer();
+    }
+
     protected override void OnUpdate() {
 
-        // Don't really know what this does, but is nessessary to getting thsi working
-        float deltaTime = Time.DeltaTime;
+        // Log player coords for debug
+        //Debug.Log(player.transform.position);
 
-        // ¨Find objects with player tag and look for position and load or unload scene depending
-        // on the position. 
-        Entities
-            .WithAll<PlayerTag>()
-            .ForEach((ref Translation translation, ref MovementData movementData) => {
+        foreach (SubScene subScene in SubSceneReferences.Instance.mapBlocks) {
 
-                foreach (SubScene subScene in SubSceneReferences.Instance.mapBlocks) {
+            if (Vector3.Distance(player.transform.position, subScene.transform.position) < load_distance) {
+                LoadSubScene(subScene);
+            } else {
+                UnloadSubScene(subScene);
+            }
+        }
+    }
 
-                    // For moving the blue test cube called "PlayerLocation"
-                    if (Input.GetKey(movementData.fowardKey)) {
-                        translation.Value.z += movementData.movementSpeed * deltaTime;
-                    }
-                    if (Input.GetKey(movementData.backKey)) {
-                        translation.Value.z -= movementData.movementSpeed * deltaTime;
-                    }
-                    if (Input.GetKey(movementData.leftKey)) {
-                        translation.Value.x -= movementData.movementSpeed * deltaTime;
-                    }
-                    if (Input.GetKey(movementData.rightKey)) {
-                        translation.Value.x += movementData.movementSpeed * deltaTime;
-                    }
-                    
-
-                    /*
-                    * Tässä on ongelma se, että Entity ei liiku kun peli pistetään päälle, eli 
-                    * Player positionin mukaan ei saada koordinaatteja haettua
-                    */
-
-                    float loadistance = 60f;
-
-                    if (Vector3.Distance(translation.Value, subScene.transform.position) < loadistance) {
-                        LoadSubScene(subScene);
-                    } else {
-                        UnloadSubScene(subScene);
-                    }
-                }
-            });
-    }    
-
-    // Fod loading and 
     private void LoadSubScene(SubScene subScene) {
         sceneSystem.LoadSceneAsync(subScene.SceneGUID);
     }
