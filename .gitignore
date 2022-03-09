@@ -59,4 +59,4 @@ sysinfo.txt
 crashlytics-build.properties
 
 # POST-COVID-GAME ADDITION: leave out assets
-*/Assets/KB3D.*
+Post-Covid/Assets/KB3D/*
