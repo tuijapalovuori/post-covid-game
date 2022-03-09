@@ -60,3 +60,4 @@ crashlytics-build.properties
 
 # POST-COVID-GAME ADDITION: leave out assets
 Post-Covid/Assets/KB3D/*
+Post-Covid/Assets/KB3D.meta
