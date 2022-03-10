@@ -4,8 +4,31 @@ using UnityEngine;
 
 // Concrete interactable used for testing.
 
-public class TestInteractable : Interactable
-{
+public class TestInteractable : Interactable {
+
+    [SerializeField]
+    public List<string> dialogue;
+
+    private DialogueBuffer dialogueBuffer;
+
+    private void Awake() {
+
+        // Find dialogue buffer
+
+        GameObject dialogueBufferGO = GameObject.FindWithTag("DialogueBuffer");
+
+        if (dialogueBufferGO == null) {
+            Debug.LogError("TestInteractable.Awake: DialogueBuffer's GO could not be found.");
+        }
+
+        dialogueBuffer = dialogueBufferGO.GetComponent<DialogueBuffer>();
+
+        if (dialogueBuffer == null) {
+            Debug.LogError("TestInteractable.Awake: DialogueBuffer component could not be found from DialogueBuffer's GO.");
+        }
+
+    }
+
     public override void InteractionAreaEntered() {
         InteractionMaster.ApplyForFocus(this);
     }
@@ -27,8 +50,8 @@ public class TestInteractable : Interactable
             return;
         }
 
-        // Check for E key
-        if (Input.GetKeyDown(KeyCode.E)) {
+        // Check for E key (if inputs allowed)
+        if ( Input.GetKeyDown(KeyCode.E) && ( GameState.GetCurrentState() == GAMESTATE.PLAYING) ) {
             Debug.Log("E key pressed!");
             TriggerInteraction();
         }
@@ -36,6 +59,7 @@ public class TestInteractable : Interactable
 
     protected override void TriggerInteraction() {
         Debug.Log("Interaction triggered!");
-        // TODO functionality
+
+        dialogueBuffer.GiveLines(dialogue);
     }
 }
