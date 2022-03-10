@@ -303,7 +303,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &189924497
 GameObject:
@@ -425,7 +425,7 @@ Transform:
   - {fileID: 1423906925}
   - {fileID: 350688490}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &350688486
 GameObject:
@@ -745,7 +745,7 @@ Transform:
   - {fileID: 1465011529}
   - {fileID: 442411276}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &431564072
 GameObject:
@@ -908,7 +908,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442411274}
-  m_LocalRotation: {x: 0.10649046, y: -0.0000000042771338, z: 4.580787e-10, w: 0.9943138}
+  m_LocalRotation: {x: 0.10649046, y: 0.0000000042771364, z: -4.5807902e-10, w: 0.9943138}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -925,7 +925,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -971,6 +971,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC1
       objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: Hello! I am NPC 1.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: This is my second line.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: This is my third and final line. Goodbye.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 482591f598bf75e459f265be4f56487e, type: 3}
 --- !u!1001 &557634985
@@ -982,7 +998,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1027,6 +1043,18 @@ PrefabInstance:
     - target: {fileID: 4752182792009740809, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_Name
       value: NPC2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: I am NPC 2. I have two lines.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: This is the second line. Goodbye.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 482591f598bf75e459f265be4f56487e, type: 3}
@@ -1384,7 +1412,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &831201975
 GameObject:
@@ -1558,12 +1586,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.12451124, y: -0.00000001280641, z: 0.0000000016065186, w: 0.9922182}
+  m_LocalRotation: {x: 0.12451124, y: -0.0000000128064075, z: 0.0000000016065046, w: 0.9922182}
   m_LocalPosition: {x: -11.46, y: 6, z: -31.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 20, y: -100, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -1892,6 +1920,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fe0fb04388a4a44da774698de29f7e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue:
+  - (It is a door.)
+  - (You cannot open it now.)
 --- !u!1 &1465011527
 GameObject:
   m_ObjectHideFlags: 3
@@ -2059,7 +2090,7 @@ Transform:
   m_LocalScale: {x: 10, y: 8, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1500880550
 GameObject:
@@ -2218,7 +2249,7 @@ Transform:
   m_Children:
   - {fileID: 112119047}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1560183674
 MonoBehaviour:
@@ -2447,7 +2478,7 @@ Transform:
   - {fileID: 1844685189}
   - {fileID: 831201976}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1709464410
 GameObject:
@@ -2542,7 +2573,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -30, y: 0, z: 0}
 --- !u!1 &1844685188
 GameObject:
@@ -2705,7 +2736,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037085236}
-  m_LocalRotation: {x: 0.14253858, y: 0.000000008515345, z: -0.0000000012262865, w: 0.98978925}
+  m_LocalRotation: {x: 0.14253858, y: -0.000000008515345, z: 0.0000000012262865, w: 0.98978925}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2893,7 +2924,51 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2104580103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2104580105}
+  - component: {fileID: 2104580104}
+  m_Layer: 0
+  m_Name: DialogueBuffer
+  m_TagString: DialogueBuffer
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2104580104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104580103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ed1e7be015fe044b46e4bd99f4564e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uihandler: {fileID: 2040707400}
+--- !u!4 &2104580105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104580103}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2134523381
 GameObject:
@@ -2988,7 +3063,7 @@ Transform:
   m_LocalScale: {x: 14, y: 10, z: 14}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4752182791703007100
 PrefabInstance:
@@ -2999,7 +3074,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3044,6 +3119,14 @@ PrefabInstance:
     - target: {fileID: 4752182792009740809, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_Name
       value: NPC3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: I am NPC 3. I only have one line. Goodbye.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 482591f598bf75e459f265be4f56487e, type: 3}

@@ -34,15 +34,15 @@ public class ThirdPersonMovement : MonoBehaviour
             // down to how big the character is. Changing jumpSpeed did not appear to break this.
             ySpeed = -0.8f;
 
-            // If jump button pressed
-            if (Input.GetKeyDown(KeyCode.Space)) {
+            // If jump button pressed (and control is allowed)
+            if ( Input.GetKeyDown(KeyCode.Space) && (GameState.GetCurrentState() == GAMESTATE.PLAYING) ) {
                 ySpeed = jumpSpeed;
             }
 
         }
 
-        // If there is control input
-        if (direction.magnitude >= 0.1f) {
+        // If there is control input (and control is allowed)
+        if ( direction.magnitude >= 0.1f && (GameState.GetCurrentState() == GAMESTATE.PLAYING) ) {
 
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
