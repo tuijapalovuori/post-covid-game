@@ -9,6 +9,8 @@ public class UIHandler : MonoBehaviour
 
     private DialogueBuffer dialogueBuffer;
 
+    private readonly string controlsString = "<b>Controls:</b> WASD to Walk, Space to Jump, E to Interact, Esc to Quit.";
+
     private void Awake() {
 
         // In case UI is not hidden, hide it
@@ -19,8 +21,8 @@ public class UIHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Set quit hint panel
-        hintPanel.Show("Press Esc to quit.", 3f);
+        // Set quit hint panel (no expiration)
+        hintPanel.Show(controlsString);
     }
 
     // Update is called once per frame
@@ -57,6 +59,11 @@ public class UIHandler : MonoBehaviour
 
             dialoguePanel.Hide();
             dialogueBuffer = null;
+
+            // TODO: FOR THE SECOND PLAYABLE, THE HINT PANEL IS SHOWN AGAIN
+            // AFTER DIALOGUE BECAUSE IT SHOWS THE CONTROLS. REMOVE
+            // THIS AFTER THE SECOND PLAYABLE HAS BEEN SUBMITTED
+            hintPanel.Show(controlsString);
 
             GameState.SetNewState(GAMESTATE.PLAYING);
             return;
