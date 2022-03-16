@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class UIHandler : MonoBehaviour
 {
-    public DialoguePanel dialoguePanel;
-    public HintPanel hintPanel;
+    public UIPanel dialoguePanel;
+    public UIPanel questPanel;
+    public TimedPanel hintPanel;
 
     private DialogueBuffer dialogueBuffer;
 
-    private readonly string controlsString = "<b>Controls:</b> WASD to Walk, Space to Jump, E to Interact, Esc to Quit.";
+    // For demos
+    //private readonly string controlsString = "<b>Controls:</b> WASD to Walk, Space to Jump, E to Interact, Esc to Quit.";
+
+    private readonly string questString = "<b>Quests</b> (Q to expand)";
 
     private void Awake() {
 
-        // In case UI is not hidden, hide it
+        // In case dialogue panel and hint panel are not hidden, hide them
         dialoguePanel.Hide();
         hintPanel.Hide();
-    }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        // Set quit hint panel (no expiration)
-        hintPanel.Show(controlsString);
+        // Show quest panel
+        questPanel.Show(questString);
     }
 
     // Update is called once per frame
@@ -60,10 +60,8 @@ public class UIHandler : MonoBehaviour
             dialoguePanel.Hide();
             dialogueBuffer = null;
 
-            // TODO: FOR THE SECOND PLAYABLE, THE HINT PANEL IS SHOWN AGAIN
-            // AFTER DIALOGUE BECAUSE IT SHOWS THE CONTROLS. REMOVE
-            // THIS AFTER THE SECOND PLAYABLE HAS BEEN SUBMITTED
-            hintPanel.Show(controlsString);
+            // Show quest panel again
+            questPanel.Show();
 
             GameState.SetNewState(GAMESTATE.PLAYING);
             return;
@@ -75,8 +73,9 @@ public class UIHandler : MonoBehaviour
 
     private void ShowDialogue(string text) {
 
-        // In case hint panel was visible, hide it
+        // In case hint and quest panels were visible, hide them
         hintPanel.Hide();
+        questPanel.Hide();
 
         dialoguePanel.Show(text);
     }

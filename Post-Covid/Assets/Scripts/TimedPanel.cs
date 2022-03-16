@@ -3,20 +3,25 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-// HintPanel is a script for the hint panel that allows
-// for easy showing and hiding of the panel as well as
-// changing of its text
+// TimedPanel inherits UIPanel but adds a timed functionality:
+// the panel can be given an amount of time that it is shown,
+// after which it disappears.
 
-public class HintPanel : MonoBehaviour
+public class TimedPanel : UIPanel
 {
-    public TextMeshProUGUI hintText;
     private bool timerOn;
     private float timer;
 
     // Make panel visible with given text and shows it for given time (seconds).
     // If no text is given, the text is what was last set.
-    // If no time is given or the time is 0, no timer is set.
-    public void Show(string text = null, float time = 0f) {
+    // If no time is given or the time is negative, nothing is done
+    // (which isn't sensible use but the time parameter needs a default value
+    // in order to come after the optional text parameter)
+    public void ShowForSeconds(string text = null, float time = -1f) {
+
+        if (time > 0f) {
+            return;
+        }
 
         gameObject.SetActive(true);
 
@@ -24,27 +29,18 @@ public class HintPanel : MonoBehaviour
             ChangeText(text);
         }
 
-        if (time > 0f) {
-            timerOn = true;
-            timer = time;
-        }
+        timerOn = true;
+        timer = time;
     }
 
     // Hide panel (resets timer)
-    public void Hide() {
+    public override void Hide() {
 
         // Stop timing, reset timer
         timerOn = false;
         timer = 0f;
 
         gameObject.SetActive(false);
-
-    }
-
-    // Change text in panel
-    public void ChangeText(string text) {
-
-        hintText.text = text;
 
     }
 
