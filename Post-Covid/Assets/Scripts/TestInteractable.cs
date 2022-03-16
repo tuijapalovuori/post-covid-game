@@ -7,6 +7,9 @@ using UnityEngine;
 public class TestInteractable : Interactable {
 
     [SerializeField]
+    public string interactionPrompt = InteractionMaster.TALK_PROMPT;
+
+    [SerializeField]
     public List<string> dialogue;
 
     private DialogueBuffer dialogueBuffer;
@@ -30,7 +33,7 @@ public class TestInteractable : Interactable {
     }
 
     public override void InteractionAreaEntered() {
-        InteractionMaster.ApplyForFocus(this);
+        InteractionMaster.ApplyForFocus(this, interactionPrompt);
     }
 
     public override void InteractionAreaExited() {

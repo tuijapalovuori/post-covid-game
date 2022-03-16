@@ -6,20 +6,21 @@ public class UIHandler : MonoBehaviour
 {
     public UIPanel dialoguePanel;
     public UIPanel questPanel;
-    public TimedPanel hintPanel;
+    public TimedPanel promptPanel;
 
     private DialogueBuffer dialogueBuffer;
 
-    // For demos
+    // FOR DEMOS
     //private readonly string controlsString = "<b>Controls:</b> WASD to Walk, Space to Jump, E to Interact, Esc to Quit.";
 
-    private readonly string questString = "<b>Quests</b> (Q to expand)";
+    // Quest panel title (collapsed)
+    private readonly string questString = "<b>Quests</b> (Q)";
 
     private void Awake() {
 
-        // In case dialogue panel and hint panel are not hidden, hide them
+        // In case dialogue panel and prompt panel are not hidden, hide them
         dialoguePanel.Hide();
-        hintPanel.Hide();
+        promptPanel.Hide();
 
         // Show quest panel
         questPanel.Show(questString);
@@ -41,6 +42,16 @@ public class UIHandler : MonoBehaviour
             ShowNextLine();
         }
 
+    }
+
+    // Shows prompt panel with given text
+    public void ShowPrompt(string text) {
+        promptPanel.Show(text);
+    }
+
+    // Hides prompt panel
+    public void HidePrompt() {
+        promptPanel.Hide();
     }
 
     private void ShowNextLine() {
@@ -73,8 +84,8 @@ public class UIHandler : MonoBehaviour
 
     private void ShowDialogue(string text) {
 
-        // In case hint and quest panels were visible, hide them
-        hintPanel.Hide();
+        // In case prompt and quest panels were visible, hide them
+        promptPanel.Hide();
         questPanel.Hide();
 
         dialoguePanel.Show(text);

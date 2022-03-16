@@ -13,8 +13,6 @@ public class UIPanel : MonoBehaviour
     // If no text is given, the text is what was last set
     public virtual void Show(string text = null) {
 
-        Debug.Log("UIPanel.Show called.");
-
         gameObject.SetActive(true);
 
         if (text != null) {
@@ -25,9 +23,7 @@ public class UIPanel : MonoBehaviour
     // Hide panel
     public virtual void Hide() {
 
-        Debug.Log("UIPanel.Hide called.");
-
-        gameObject.SetActive(false);  // TODO why does this not work?
+        gameObject.SetActive(false);
 
     }
 
