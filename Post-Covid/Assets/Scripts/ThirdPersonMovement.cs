@@ -6,6 +6,7 @@ public class ThirdPersonMovement : MonoBehaviour
 {
     public CharacterController controller;
     public Transform cam;
+    Animator animator;
 
     public float speed = 6f;
     public float jumpSpeed = 6f;
@@ -15,9 +16,22 @@ public class ThirdPersonMovement : MonoBehaviour
 
     private float ySpeed = 0f;
 
+    // Awake animator component
+    void Awake() => animator = GetComponent<Animator>();
+
+
+
+
     // Update is called once per frame
     void Update()
     {
+
+        // Animating. Get controller velocity and apply it to VElocityZ slot in Animator
+        float velocityZ = Vector3.Dot(controller.velocity, transform.forward);
+        animator.SetFloat("VelocityZ", velocityZ, 0.1f, Time.deltaTime);
+        // animator.SetFloat("VelocityX", velocityX, 0.1f, Time.deltaTime);
+
+
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
@@ -38,7 +52,7 @@ public class ThirdPersonMovement : MonoBehaviour
             if ( Input.GetKeyDown(KeyCode.Space) && (GameState.GetCurrentState() == GAMESTATE.PLAYING) ) {
                 ySpeed = jumpSpeed;
             }
-
+             
         }
 
         // If there is control input (and control is allowed)
@@ -56,12 +70,12 @@ public class ThirdPersonMovement : MonoBehaviour
             moveDirScaled.y = ySpeed;
 
             controller.Move(moveDirScaled * Time.deltaTime);
+
         } else {
 
             // Only yspeed
             controller.Move(new Vector3(0f, ySpeed, 0f) * Time.deltaTime);
         }
-
     }
 
     private void OnApplicationFocus(bool focus) {

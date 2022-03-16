@@ -285,6 +285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: aasfaltti
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
 --- !u!4 &200364867 stripped
@@ -355,6 +359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: aasfaltti (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
 --- !u!4 &237123045 stripped
@@ -424,6 +432,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
       propertyPath: m_Name
       value: aasfaltti (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
@@ -706,6 +718,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: aasfaltti (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
 --- !u!4 &461531053 stripped
@@ -775,6 +791,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
       propertyPath: m_Name
       value: aasfaltti (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
@@ -846,6 +866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: aasfaltti (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
 --- !u!4 &632351894 stripped
@@ -915,6 +939,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
       propertyPath: m_Name
       value: aasfaltti (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
@@ -1095,6 +1123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: aasfaltti (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
 --- !u!4 &773749387 stripped
@@ -1164,6 +1196,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e6453d525284f624bb149f7268b29c59, type: 3}
       propertyPath: m_Name
       value: aasfaltti_risteys (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6453d525284f624bb149f7268b29c59, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6453d525284f624bb149f7268b29c59, type: 3}
@@ -1235,6 +1271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: aasfaltti (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
 --- !u!4 &843836990 stripped
@@ -1304,6 +1344,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
       propertyPath: m_Name
       value: aasfaltti (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
@@ -1375,6 +1419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: aasfaltti (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
 --- !u!4 &1080979473 stripped
@@ -1444,6 +1492,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e6453d525284f624bb149f7268b29c59, type: 3}
       propertyPath: m_Name
       value: aasfaltti_risteys (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6453d525284f624bb149f7268b29c59, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6453d525284f624bb149f7268b29c59, type: 3}
@@ -1621,6 +1673,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
       propertyPath: m_Name
       value: aasfaltti (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
@@ -2003,6 +2059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: aasfaltti (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ffc946f0fa8f594297fdb14e5ffb863, type: 3}
 --- !u!4 &1866025809 stripped
@@ -2072,6 +2132,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e6453d525284f624bb149f7268b29c59, type: 3}
       propertyPath: m_Name
       value: aasfaltti_risteys (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6453d525284f624bb149f7268b29c59, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6453d525284f624bb149f7268b29c59, type: 3}

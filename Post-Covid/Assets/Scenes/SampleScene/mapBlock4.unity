@@ -188,6 +188,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -9155822264897097503, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -240,9 +244,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2485153387585551133, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_B (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 340985702852211518, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135855024887114446, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087485020331571520, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241030199374244252, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599783718227060357, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
@@ -558,6 +590,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -7944046817092327825, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6385836621842719755, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -610,9 +650,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2062482064484827754, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1819744380409023179, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgLG_C (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 497077570832733480, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617714578119501257, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
@@ -623,6 +683,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -8967092044021533724, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8882853012079348836, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6280090110948216438, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5955441629816216737, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -675,9 +751,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3705488482188715174, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3655585163097849670, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2751151860561084118, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_C (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -281836533799757031, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 705899642707173301, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895629974178904649, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258891091719434211, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853658650516379545, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766659136883186813, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
@@ -712,6 +828,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -8967092044021533724, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8882853012079348836, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6280090110948216438, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5955441629816216737, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -764,9 +896,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3705488482188715174, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3655585163097849670, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2751151860561084118, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_C (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -281836533799757031, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 705899642707173301, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895629974178904649, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258891091719434211, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853658650516379545, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766659136883186813, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
@@ -993,6 +1165,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -8967092044021533724, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8882853012079348836, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6280090110948216438, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5955441629816216737, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1045,9 +1233,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3705488482188715174, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3655585163097849670, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2751151860561084118, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_C (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -281836533799757031, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 705899642707173301, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895629974178904649, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258891091719434211, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853658650516379545, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766659136883186813, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
@@ -1063,6 +1291,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -7944046817092327825, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6385836621842719755, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -1115,9 +1351,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2062482064484827754, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1819744380409023179, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgLG_C
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 497077570832733480, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617714578119501257, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d11b8f38d709484ea5417e4b771b76a, type: 3}
@@ -1304,6 +1560,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -6473577834628674063, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -1359,6 +1619,14 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -244199987489407137, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
@@ -1548,6 +1816,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -9155822264897097503, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -1600,9 +1872,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2485153387585551133, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_B (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 340985702852211518, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135855024887114446, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087485020331571520, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241030199374244252, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599783718227060357, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
@@ -1618,6 +1918,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -8967092044021533724, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8882853012079348836, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6280090110948216438, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5955441629816216737, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1670,9 +1986,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3705488482188715174, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3655585163097849670, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2751151860561084118, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_C (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -281836533799757031, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 705899642707173301, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895629974178904649, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258891091719434211, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853658650516379545, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766659136883186813, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
@@ -1928,6 +2284,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -9155822264897097503, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1980,9 +2340,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2485153387585551133, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_B (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 340985702852211518, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135855024887114446, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087485020331571520, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241030199374244252, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599783718227060357, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
@@ -2039,6 +2427,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -8967092044021533724, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8882853012079348836, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6280090110948216438, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5955441629816216737, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -2091,9 +2495,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3705488482188715174, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3655585163097849670, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2751151860561084118, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_C (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -281836533799757031, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 705899642707173301, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895629974178904649, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258891091719434211, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853658650516379545, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766659136883186813, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
@@ -2186,6 +2630,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -8967092044021533724, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8882853012079348836, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6280090110948216438, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5955441629816216737, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -2238,9 +2698,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3705488482188715174, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3655585163097849670, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2751151860561084118, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_C (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -281836533799757031, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 705899642707173301, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895629974178904649, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258891091719434211, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853658650516379545, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766659136883186813, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
@@ -2358,6 +2858,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 30.4
       objectReference: {fileID: 0}
+    - target: {fileID: -6473577834628674063, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -2413,6 +2917,14 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_A (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -244199987489407137, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4797786656101631504, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2557,6 +3069,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -8967092044021533724, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8882853012079348836, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6280090110948216438, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5955441629816216737, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2609,9 +3137,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3705488482188715174, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3655585163097849670, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2751151860561084118, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_C (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -281836533799757031, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 705899642707173301, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895629974178904649, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258891091719434211, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853658650516379545, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766659136883186813, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
@@ -2627,6 +3195,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -8967092044021533724, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8882853012079348836, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6280090110948216438, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5955441629816216737, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -2679,9 +3263,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3705488482188715174, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3655585163097849670, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2751151860561084118, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_C (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -281836533799757031, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 705899642707173301, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895629974178904649, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258891091719434211, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853658650516379545, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766659136883186813, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
@@ -2735,6 +3359,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -8967092044021533724, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8882853012079348836, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6280090110948216438, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5955441629816216737, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2787,9 +3427,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3705488482188715174, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3655585163097849670, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2751151860561084118, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_C (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -281836533799757031, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 705899642707173301, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895629974178904649, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258891091719434211, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853658650516379545, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766659136883186813, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
@@ -2805,6 +3485,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -9155822264897097503, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -2857,9 +3541,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2485153387585551133, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_B
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 340985702852211518, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135855024887114446, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087485020331571520, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241030199374244252, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599783718227060357, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd91dd8c85fad9f4cb54d9ea89d8c265, type: 3}
@@ -2938,6 +3650,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -6473577834628674063, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -2994,6 +3710,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_A
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -244199987489407137, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
 --- !u!4 &1845445339 stripped
@@ -3008,6 +3732,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -6473577834628674063, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -3064,6 +3792,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_A (2)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -244199987489407137, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cc220ee2c86c664f9cd3b3c075214c9, type: 3}
 --- !u!4 &1993031081 stripped
@@ -3078,6 +3814,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1647652601}
     m_Modifications:
+    - target: {fileID: -8967092044021533724, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8882853012079348836, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6280090110948216438, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5955441629816216737, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3130,9 +3882,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3705488482188715174, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3655585163097849670, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2751151860561084118, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
       propertyPath: m_Name
       value: KB3D_NEC_BldgSM_C
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -281836533799757031, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 705899642707173301, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895629974178904649, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258891091719434211, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853658650516379545, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766659136883186813, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 929099e65f61cd14cbabb9e5252a200b, type: 3}
