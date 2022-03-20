@@ -12,22 +12,22 @@ public class TestInteractable : Interactable {
     [SerializeField]
     public List<string> dialogue;
 
-    private DialogueBuffer dialogueBuffer;
+    private DialogueMaster dialogueMaster;
 
     private void Awake() {
 
-        // Find dialogue buffer
+        // Find dialogue master
 
-        GameObject dialogueBufferGO = GameObject.FindWithTag("DialogueBuffer");
+        GameObject dialogueMasterGO = GameObject.FindWithTag("DialogueMaster");
 
-        if (dialogueBufferGO == null) {
-            Debug.LogError("TestInteractable.Awake: DialogueBuffer's GO could not be found.");
+        if (dialogueMasterGO == null) {
+            Debug.LogError("TestInteractable.Awake: DialogueMaster's GO could not be found.");
         }
 
-        dialogueBuffer = dialogueBufferGO.GetComponent<DialogueBuffer>();
+        dialogueMaster = dialogueMasterGO.GetComponent<DialogueMaster>();
 
-        if (dialogueBuffer == null) {
-            Debug.LogError("TestInteractable.Awake: DialogueBuffer component could not be found from DialogueBuffer's GO.");
+        if (dialogueMaster == null) {
+            Debug.LogError("TestInteractable.Awake: DialogueMaster component could not be found from DialogueMaster's GO.");
         }
 
     }
@@ -63,6 +63,6 @@ public class TestInteractable : Interactable {
     protected override void TriggerInteraction() {
         Debug.Log("Interaction triggered!");
 
-        dialogueBuffer.GiveLines(dialogue);
+        dialogueMaster.StartConversation(dialogue);
     }
 }

@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// TODO: move dialogue navigation and bookkeeping to DialogueMaster,
+// have this only as an interface for showing things in the UI
+
 public class UIHandler : MonoBehaviour
 {
     public UIPanel dialoguePanel;
     public UIPanel questPanel;
     public TimedPanel promptPanel;
-
-    private DialogueBuffer dialogueBuffer;
 
     // FOR DEMOS
     //private readonly string controlsString = "<b>Controls:</b> WASD to Walk, Space to Jump, E to Interact, Esc to Quit.";
@@ -26,6 +27,7 @@ public class UIHandler : MonoBehaviour
         questPanel.Show(questString);
     }
 
+    /*
     // Update is called once per frame
     void Update()
     {
@@ -42,7 +44,7 @@ public class UIHandler : MonoBehaviour
             ShowNextLine();
         }
 
-    }
+    }*/
 
     // Shows prompt panel with given text
     public void ShowPrompt(string text) {
@@ -54,6 +56,7 @@ public class UIHandler : MonoBehaviour
         promptPanel.Hide();
     }
 
+    /*
     private void ShowNextLine() {
 
         if (dialogueBuffer == null) {
@@ -80,20 +83,39 @@ public class UIHandler : MonoBehaviour
 
         // Otherwise show next line
         ShowDialogue(nextline);
-    }
+    }*/
 
-    private void ShowDialogue(string text) {
+    // Enter dialogue mode of UI with given text
+    public void EnterDialogueMode(string text) {
 
         // In case prompt and quest panels were visible, hide them
         promptPanel.Hide();
         questPanel.Hide();
 
+        // Show dialogue panel with giveen text
         dialoguePanel.Show(text);
     }
 
+    // Exit dialogue mode
+    public void ExitDialogueMode() {
+
+        // Hide dialogue
+        dialoguePanel.Hide();
+
+        // Show quest panel again
+        questPanel.Show();
+    }
+
+    // Show given text in dialogue window
+    // NOTE: should only be called after EnterDialogueMode
+    public void ShowDialogueText(string text) {
+        dialoguePanel.Show(text);
+    }
+
+    /*
     // Method that gets UIHandler to begin dialogue process.
     // Dialogue is read from given buffer.
-    public void BeginDialogue(DialogueBuffer buffer) {
+    public void BeginDialogue(DialogueMaster buffer) {
 
         string firstline = buffer.GetNextLine();
 
@@ -110,5 +132,5 @@ public class UIHandler : MonoBehaviour
         // Show first line
         ShowDialogue(firstline);
 
-    }
+    }*/
 }
