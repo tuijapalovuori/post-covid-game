@@ -7,6 +7,9 @@ using UnityEngine;
 public class TestInteractable : Interactable {
 
     [SerializeField]
+    public string id = "";
+
+    [SerializeField]
     public string interactionPrompt = InteractionMaster.TALK_PROMPT;
 
     [SerializeField]
@@ -63,6 +66,6 @@ public class TestInteractable : Interactable {
     protected override void TriggerInteraction() {
         Debug.Log("Interaction triggered!");
 
-        dialogueMaster.StartConversation(dialogue);
+        dialogueMaster.StartConversation( dialogue, new Action(ACTION_TYPE.TALKED_TO, id) );
     }
 }

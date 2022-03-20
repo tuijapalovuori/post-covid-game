@@ -12,6 +12,7 @@ public class DialogueMaster : MonoBehaviour {
     public UIHandler uiHandler;
     private List<string> lines;
     private int index;
+    private Action afterDialogueAction;
 
     // Update is called once per frame
     void Update() {
@@ -31,11 +32,10 @@ public class DialogueMaster : MonoBehaviour {
 
     }
 
-    // Starts conversation of given lines.
+    // Starts conversation of given lines and marks down the given action to be dispatched
+    // once the conversation is over.
     // NOTE: At this point only allows for linear conversations.
-    // TODO: Give action struct as second param and have
-    // this class dispatch said action to Quests upon end of conversation
-    public void StartConversation(List<string> newLines) {
+    public void StartConversation(List<string> newLines, Action action = null) {
 
         if (newLines == null || newLines.Count == 0) {
             Debug.LogWarning("DialogueMaster.StartConversation called with null or empty list. Returning without change.");
@@ -51,8 +51,11 @@ public class DialogueMaster : MonoBehaviour {
         // Init index
         index = 0;
 
+        // Store action
+        afterDialogueAction = action;
+
         // Enter dialogue UI with first line
-        uiHandler.EnterDialogueMode(lines[0]);
+        uiHandler.EnterDialogueMode(lines[index]);
 
     }
 
@@ -77,7 +80,6 @@ public class DialogueMaster : MonoBehaviour {
     }
 
     // Called by Advance when there are no more lines
-    // TODO: dispatch action if one was given
     private void EndConversation() {
 
         // Flush lines
@@ -85,6 +87,14 @@ public class DialogueMaster : MonoBehaviour {
 
         // Exit dialogue UI
         uiHandler.ExitDialogueMode();
+
+        // Dispatch action if there is one and reset
+        if (afterDialogueAction != null) {
+
+            QuestSystem.UpdateQuests(afterDialogueAction);
+
+            afterDialogueAction = null;
+        }
 
         // Set gamestate back to playing
         GameState.SetNewState(GAMESTATE.PLAYING);
