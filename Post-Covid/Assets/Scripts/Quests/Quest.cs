@@ -27,10 +27,10 @@ public class Quest
     // Tries to advance quest with given action. Return value tells whether this was successful.
     public bool TryAdvanceQuest(Action action) {
 
-        Debug.Log("Quest.TryAdvanceQuest called. Quest name: " + Title);
+        // Debug.Log("Quest.TryAdvanceQuest called. Quest name: " + Title);
 
+        // If the quest is complete, don't bother checking
         if (IsComplete) {
-            Debug.LogWarning("Quest.TryAdvanceQuest: This quest is already complete. Returning false.");
             return false;
         }
 
@@ -39,12 +39,16 @@ public class Quest
 
             //Debug.Log("Quest.TryAdvanceQuest: Stage was advanced! Stage description: " + questStages[currentStage].Description);
 
-            // Increase index of current stage
-            currentStage++;
+            // Check if stage is complete
+            if (questStages[currentStage].IsComplete) {
 
-            // Check if quest is complete
-            if (currentStage == questStages.Count) {
-                IsComplete = true;
+                // Move to next stage
+                currentStage++;
+
+                // Check if quest is complete
+                if (currentStage == questStages.Count) {
+                    IsComplete = true;
+                }
             }
 
             return true;

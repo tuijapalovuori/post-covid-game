@@ -81,15 +81,24 @@ public class QuestStage
 
         completedActions.Add(action);
 
+        Debug.Log("QuestStage.TryAdvanceStage: Stage advanced. Stage progress: " + GetProgress());
+
         // If the amount of required and completed actions are equal, the stage is complete
         // NOTE: This assumes that the completed actions only include actions from the
         // required actions and that there are no multiples of the same action,
         // which should always be the case in this architecture, but it's worth noting
         if ( requiredActions.Count == completedActions.Count ) {
+
+            Debug.Log("QuestStage.TryAdvanceStage: Stage completed. Stage description: " + Description);
             IsComplete = true;
         }
 
         // Return true as the action did advance the stage
         return true;
+    }
+
+    // A method to return the stage progress numerically as a string (e.g. 2/5).
+    public string GetProgress() {
+        return completedActions.Count + "/" + requiredActions.Count;
     }
 }
