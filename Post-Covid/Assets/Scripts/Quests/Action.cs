@@ -20,4 +20,9 @@ public class Action
         Type = type;
         TargetID = targetID;
     }
+
+    // Returns whether the given action is equal to this one
+    public bool Equals(Action action) {
+        return (Type == action.Type) && (TargetID == action.TargetID);
+    }
 }

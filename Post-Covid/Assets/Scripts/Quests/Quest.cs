@@ -3,63 +3,56 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // The quest object represents a single quest.
-// It contains the steps of the quest (NOTE: this allows for linear quests only
-// at the moment), the current step index, and the status of whether the quest
+// It contains the stages of the quest (NOTE: this allows for linear quests only
+// at the moment), the current stage index, and the status of whether the quest
 // has been completed or not.
 
 public class Quest
 {
-    private bool isComplete;
-    private int currentStep;
-    private List<Action> questSteps;
+    public string Title { get; }
+    public bool IsComplete { get; private set; }
 
-    public Quest(List<Action> quest_steps) {
-        questSteps = quest_steps;
+    private int currentStage;
+    private List<QuestStage> questStages;
 
-        isComplete = false;
-        currentStep = 0;
+    public Quest(string questTitle, List<QuestStage> quest_stages) {
+
+        Title = questTitle;
+        questStages = quest_stages;
+
+        IsComplete = false;
+        currentStage = 0;
     }
 
-    // Checks whether the given action would advance this quest at its current state
-    public bool ActionAdvancesQuest(Action action) {
+    // Tries to advance quest with given action. Return value tells whether this was successful.
+    public bool TryAdvanceQuest(Action action) {
 
-        if (isComplete) {
-            Debug.LogWarning("Quest.ActionAdvancesQuest: This quest is already complete. Returning false.");
+        Debug.Log("Quest.TryAdvanceQuest called. Quest name: " + Title);
+
+        if (IsComplete) {
+            Debug.LogWarning("Quest.TryAdvanceQuest: This quest is already complete. Returning false.");
             return false;
         }
 
-        if (action.Equals(questSteps[currentStep])) {
+        // Try to advance stage
+        if (questStages[currentStage].TryAdvanceStage(action)) {
+
+            //Debug.Log("Quest.TryAdvanceQuest: Stage was advanced! Stage description: " + questStages[currentStage].Description);
+
+            // Increase index of current stage
+            currentStage++;
+
+            // Check if quest is complete
+            if (currentStage == questStages.Count) {
+                IsComplete = true;
+            }
+
             return true;
         }
+
+        //Debug.Log("Quest.TryAdvanceQuest: Stage was not advanced. Stage description: " + questStages[currentStage].Description);
 
         return false;
     }
 
-    // Advances quest with the given action (if it is valid)
-    public void AdvanceQuest(Action action) {
-
-        if (isComplete) {
-            Debug.LogWarning("Quest.AdvanceQuest: This quest is already complete. Returning.");
-            return;
-        }
-
-        if (!action.Equals(questSteps[currentStep])) {
-            Debug.LogWarning("Quest.AdvanceQuest: Given action does not advance quest. Returning.");
-            return;
-        }
-
-        currentStep++;
-
-        if (currentStep == questSteps.Count) {
-            isComplete = true;
-            return;
-        }
-
-    }
-
-    // Returns whether this quest is complete
-    public bool IsComplete() {
-
-        return isComplete;
-    }
 }
