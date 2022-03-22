@@ -4,6 +4,7 @@ using UnityEngine;
 
 // ACTION_TYPE describes the type of an action
 public enum ACTION_TYPE {
+    GAME_STARTED,
     TALKED_TO,
     INTERACTED_WITH,
     BOUGHT_ITEM

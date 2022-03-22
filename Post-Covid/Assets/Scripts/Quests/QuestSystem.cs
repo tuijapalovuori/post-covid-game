@@ -11,10 +11,12 @@ using UnityEngine;
 
 public static class QuestSystem
 {
+    private static UIHandler uiHandler = null;
+
     // List of all Quests
     private static List<Quest> ALL_QUESTS = new List<Quest> {
 
-        new Quest( "Test Quest", new List<QuestStage> {
+        new Quest( "Test Quest", new Action( ACTION_TYPE.GAME_STARTED ), new List<QuestStage> {
             new QuestStage( "Find NPC 1 and talk to them.", new List<Action>{
                 new Action( ACTION_TYPE.TALKED_TO, "NPC1" )
             } ),
@@ -26,7 +28,7 @@ public static class QuestSystem
             } )
         } ),
 
-        new Quest( "Find birthday guests", new List<QuestStage> {
+        new Quest( "Find birthday guests", new Action( ACTION_TYPE.GAME_STARTED ), new List<QuestStage> {
             new QuestStage( "Find all 3 of your friends and tell them you're having a party.", new List<Action>{
                 new Action( ACTION_TYPE.TALKED_TO, "FRIEND1" ),
                 new Action( ACTION_TYPE.TALKED_TO, "FRIEND2" ),
@@ -36,36 +38,51 @@ public static class QuestSystem
 
     };
 
+    // Function that attempts to fetch the UI Handler.
+    // Returns true if successful, false if there was a failure.
+    private static bool FetchUIHandler() {
+
+        uiHandler = ComponentFinder.FindUIHandler();
+
+        if (uiHandler == null) {
+            return false;
+        }
+
+        return true;
+    }
+
     public static void UpdateQuests(Action action) {
 
+        // Make sure UI Handler is found
+        if (uiHandler == null && !FetchUIHandler()) {
+            Debug.LogError("QuestSystem.UpdateQuests: UI Handler could not be found. Returning without change.");
+            return;
+        }
+
+        /*
         Debug.Log("QuestSystem.UpdateQuests called!");
         Debug.Log("Action type: " + action.Type);
         Debug.Log("Action target: " + action.TargetID);
+        */
 
         // Debug.Log("Amount of quests in ALL_QUESTS: " + ALL_QUESTS.Count);
 
+        bool was_started = false;
+
         foreach (Quest quest in ALL_QUESTS) {
 
-            if ( quest.TryAdvanceQuest(action) ) {
+            if ( quest.TryAdvanceQuest(action, out was_started) ) {
 
-                Debug.Log("Quest advanced! Quest name: " + quest.Title);
+                // If the quest was just started, add it to the UI
+                if (was_started) {
 
-                if (quest.IsComplete) {
-
-                    Debug.Log("Quest Completed!");
-
-                    // TODO: remove quest from UI
-
-                } else {
-
-                    Debug.Log("Quest has not yet been completed.");
-
-                    // TODO: update UI
+                    uiHandler.AddQuest(quest);
                 }
-
             }
-
         }
+
+        // Update quests in UI
+        uiHandler.UpdateQuests();
 
     }
 }

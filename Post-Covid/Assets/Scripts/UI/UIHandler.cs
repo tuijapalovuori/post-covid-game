@@ -78,4 +78,14 @@ public class UIHandler : MonoBehaviour
         dialoguePanel.Show(text);
     }
 
+    // Add quest to quest panel system
+    public void AddQuest(Quest quest) {
+        questPanels.GetQuestListPanel().AddQuest(quest);
+    }
+
+    // Update quests in quest panel system
+    public void UpdateQuests() {
+        questPanels.GetQuestListPanel().UpdateQuests();
+    }
+
 }

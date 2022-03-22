@@ -15,27 +15,17 @@ public static class InteractionMaster
 
     private static Interactable _interactable_in_focus = null;
 
-    private static UIHandler _ui_handler_ref = null;
+    private static UIHandler _ui_handler = null;
 
     // Function that attempts to fetch the UI Handler's reference.
     // Returns true if successful, false if there was a failure.
-    private static bool FetchUIHandlerRef() {
+    private static bool FetchUIHandler() {
 
-        GameObject UIHandlerGO = GameObject.FindWithTag("UIHandler");
+        _ui_handler = ComponentFinder.FindUIHandler();
 
-        if (UIHandlerGO == null) {
-            Debug.LogError("InteractionMaster.FetchUIHandlerRef: UIHandler's GO could not be found.");
+        if (_ui_handler == null) {
             return false;
         }
-
-        UIHandler uiHandler = UIHandlerGO.GetComponent<UIHandler>();
-
-        if (uiHandler == null) {
-            Debug.LogError("InteractionMaster.FetchUIHandlerRef: UIHandler component could not be found from UIHandler's GO.");
-            return false;
-        }
-
-        _ui_handler_ref = uiHandler;
 
         return true;
     }
@@ -59,9 +49,9 @@ public static class InteractionMaster
 
         // If there is no UI handler ref and fetching it fails,
         // log a warning and return failure
-        if (_ui_handler_ref == null && !FetchUIHandlerRef()) {
+        if (_ui_handler == null && !FetchUIHandler()) {
 
-            Debug.Log("Interaction.ApplyForFocus: UI Handler could not be found. Return failure.");
+            Debug.LogError("Interaction.ApplyForFocus: UI Handler could not be found. Return failure.");
 
             return false;
         }
@@ -69,12 +59,12 @@ public static class InteractionMaster
         if (promptText == null) {
 
             // If no promptText was given, hide prompt panel
-            _ui_handler_ref.HidePrompt();
+            _ui_handler.HidePrompt();
 
         } else {
 
             // If promptText was given, show the panel with promptText
-            _ui_handler_ref.ShowPrompt(promptText);
+            _ui_handler.ShowPrompt(promptText);
 
         }
 
@@ -91,7 +81,7 @@ public static class InteractionMaster
             _interactable_in_focus = null;
 
             // Hide prompt panel
-            _ui_handler_ref.HidePrompt();
+            _ui_handler.HidePrompt();
         }
     }
 }
