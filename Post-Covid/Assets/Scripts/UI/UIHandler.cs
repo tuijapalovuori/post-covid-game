@@ -2,20 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// TODO: move dialogue navigation and bookkeeping to DialogueMaster,
-// have this only as an interface for showing things in the UI
+// UIHandler is a class that works as an interface for the various
+// UI elements, such as the dialogue panel, the quest panels
+// and the prompt panel.
 
 public class UIHandler : MonoBehaviour
 {
     public UIPanel dialoguePanel;
-    public UIPanel questPanel;
+    public QuestPanels questPanels;
     public TimedPanel promptPanel;
 
     // FOR DEMOS
     //private readonly string controlsString = "<b>Controls:</b> WASD to Walk, Space to Jump, E to Interact, Esc to Quit.";
-
-    // Quest panel title (collapsed)
-    private readonly string questString = "<b>Quests</b> (Q)";
 
     private void Awake() {
 
@@ -23,28 +21,25 @@ public class UIHandler : MonoBehaviour
         dialoguePanel.Hide();
         promptPanel.Hide();
 
-        // Show quest panel
-        questPanel.Show(questString);
+        // Show quest panels
+        questPanels.Show();
     }
 
-    /*
     // Update is called once per frame
-    void Update()
-    {
-        // If there is no dialogue, do nothing
-        if (GameState.GetCurrentState() != GAMESTATE.DIALOGUE) {
-            return;
+    void Update() {
+
+        // Check for Q, which collapses or expands quest list
+        if (Input.GetKeyDown(KeyCode.Q)) {
+
+            //Debug.Log("Q pressed!");
+
+            if (questPanels.IsExpanded) {
+                questPanels.Collapse();
+            } else {
+                questPanels.Expand();
+            }
         }
-
-        // Check for E key or enter
-        if ( Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)) {
-
-            Debug.Log("Space or enter pressed!");
-
-            ShowNextLine();
-        }
-
-    }*/
+    }
 
     // Shows prompt panel with given text
     public void ShowPrompt(string text) {
@@ -56,41 +51,12 @@ public class UIHandler : MonoBehaviour
         promptPanel.Hide();
     }
 
-    /*
-    private void ShowNextLine() {
-
-        if (dialogueBuffer == null) {
-            Debug.LogError("UIHandler.ShowNextLine called, but dialogueBuffer is null. Returning.");
-            return;
-        }
-
-        string nextline = dialogueBuffer.GetNextLine();
-
-        // If there is no next line, close dialogue and return gamestate to playing
-        if (nextline == null) {
-
-            Debug.Log("No more dialogue. Should hide dialogue panel.");
-
-            dialoguePanel.Hide();
-            dialogueBuffer = null;
-
-            // Show quest panel again
-            questPanel.Show();
-
-            GameState.SetNewState(GAMESTATE.PLAYING);
-            return;
-        }
-
-        // Otherwise show next line
-        ShowDialogue(nextline);
-    }*/
-
     // Enter dialogue mode of UI with given text
     public void EnterDialogueMode(string text) {
 
         // In case prompt and quest panels were visible, hide them
         promptPanel.Hide();
-        questPanel.Hide();
+        questPanels.Hide();
 
         // Show dialogue panel with giveen text
         dialoguePanel.Show(text);
@@ -102,8 +68,8 @@ public class UIHandler : MonoBehaviour
         // Hide dialogue
         dialoguePanel.Hide();
 
-        // Show quest panel again
-        questPanel.Show();
+        // Show quest panels again
+        questPanels.Show();
     }
 
     // Show given text in dialogue window
@@ -112,25 +78,4 @@ public class UIHandler : MonoBehaviour
         dialoguePanel.Show(text);
     }
 
-    /*
-    // Method that gets UIHandler to begin dialogue process.
-    // Dialogue is read from given buffer.
-    public void BeginDialogue(DialogueMaster buffer) {
-
-        string firstline = buffer.GetNextLine();
-
-        if (firstline == null) {
-            Debug.LogWarning("UIHandler could not get first line from DialogueBuffer. Returning.");
-            return;
-        }
-
-        // Store reference to buffer and set gamestate to dialogue
-        dialogueBuffer = buffer;
-
-        GameState.SetNewState(GAMESTATE.DIALOGUE);
-
-        // Show first line
-        ShowDialogue(firstline);
-
-    }*/
 }

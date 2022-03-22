@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 
 // UIPanel is a base class for scripts for panels in the UI
+// with typical functionality (showing, hiding, setting text)
 
 public class UIPanel : MonoBehaviour
 {
