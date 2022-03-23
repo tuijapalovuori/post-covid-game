@@ -81,7 +81,7 @@ public class QuestStage
 
         completedActions.Add(action);
 
-        Debug.Log("QuestStage.TryAdvanceStage: Stage advanced. Stage progress: " + GetProgress());
+        Debug.Log("QuestStage.TryAdvanceStage: Stage advanced. Stage progress: " + GetProgressRendered());
 
         // If the amount of required and completed actions are equal, the stage is complete
         // NOTE: This assumes that the completed actions only include actions from the
@@ -97,8 +97,14 @@ public class QuestStage
         return true;
     }
 
-    // A method to return the stage progress numerically as a string (e.g. 2/5).
-    public string GetProgress() {
-        return completedActions.Count + "/" + requiredActions.Count;
+    // A method to return a textual representation of the current progress (in form (x/y))
+    public string GetProgressRendered() {
+        return "(" + completedActions.Count + "/" + requiredActions.Count + ")";
+    }
+
+    // Returns whether this stage only requires one action
+    // (Used by UI to decide whether or not to show stage progress)
+    public bool IsSingleAction() {
+        return requiredActions.Count == 1;
     }
 }

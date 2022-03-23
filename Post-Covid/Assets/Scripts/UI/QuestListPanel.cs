@@ -44,10 +44,63 @@ public class QuestListPanel : MonoBehaviour {
     // (checks the Quests directly, hence no arguments)
     public void UpdateQuests() {
 
-        Debug.Log("QuestListPanel.UpdateQuests called, but there is no functionality yet. Returning.");
+        Debug.Log("QuestListPanel.UpdateQuests called!");
 
-        // TODO go through quests and construct
-        // string to display
+        // Remove all completed quests
+        // TODO test!
+        quests.RemoveAll( IsComplete );
+
+        // Render quests
+        RenderQuests();
+    }
+
+    // Help method for removal
+    private bool IsComplete(Quest quest) {
+        return quest.IsComplete;
+    }
+
+    // Renders current quests in text form in the quest panel
+    private void RenderQuests() {
+
+        // If there are no quests, display no quests message
+        if (quests.Count == 0) {
+            panelText.text = NO_QUESTS_MESSAGE;
+            return;
+        }
+
+        // Create text representation of each quest
+
+        List<string> questsInText = new List<string>();
+
+        foreach (Quest quest in quests) {
+            questsInText.Add(RenderQuest(quest));
+        }
+
+        // Join text representations together with newlines
+        string finalText = string.Join("\n\n", questsInText);
+
+        Debug.Log(finalText);
+
+        // Show final text in panel
+        panelText.text = finalText;
+    }
+
+    // Returns string representation of single quest
+    private string RenderQuest(Quest quest) {
+
+        string titleText = "<b>" + quest.Title + "</b>";
+
+        string stageDesc = quest.GetCurrentStageDescription();
+
+        string finalText = titleText + "\n" + stageDesc;
+
+        // Only add progress if there is more than one action required (in total)
+        // to progress the current stage
+        if (!quest.CurrentStageIsSingleAction()) {
+            finalText = finalText + " " + quest.GetCurrentStageProgress();
+        }
+
+        return finalText;
     }
 
 }
