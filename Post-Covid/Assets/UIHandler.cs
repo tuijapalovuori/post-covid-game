@@ -36,7 +36,7 @@ public class UIHandler : MonoBehaviour
         // Check for E key or enter
         if ( Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)) {
 
-            Debug.Log("Space or enter pressed!");
+          //  Debug.Log("Space or enter pressed!");
 
             ShowNextLine();
         }
@@ -46,7 +46,7 @@ public class UIHandler : MonoBehaviour
     private void ShowNextLine() {
 
         if (dialogueBuffer == null) {
-            Debug.LogError("UIHandler.ShowNextLine called, but dialogueBuffer is null. Returning.");
+          //  Debug.LogError("UIHandler.ShowNextLine called, but dialogueBuffer is null. Returning.");
             return;
         }
 
@@ -55,7 +55,7 @@ public class UIHandler : MonoBehaviour
         // If there is no next line, close dialogue and return gamestate to playing
         if (nextline == null) {
 
-            Debug.Log("No more dialogue. Should hide dialogue panel.");
+        //    Debug.Log("No more dialogue. Should hide dialogue panel.");
 
             dialoguePanel.Hide();
             dialogueBuffer = null;
@@ -88,7 +88,7 @@ public class UIHandler : MonoBehaviour
         string firstline = buffer.GetNextLine();
 
         if (firstline == null) {
-            Debug.LogWarning("UIHandler could not get first line from DialogueBuffer. Returning.");
+          //  Debug.LogWarning("UIHandler could not get first line from DialogueBuffer. Returning.");
             return;
         }
 

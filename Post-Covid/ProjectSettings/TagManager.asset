@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - DialogueBuffer
+  - NPC
+  - spawner
   layers:
   - Default
   - TransparentFX

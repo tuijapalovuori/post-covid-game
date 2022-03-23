@@ -22,7 +22,7 @@ public static class GameState
 
     public static void SetNewState( GAMESTATE newState ) {
 
-        Debug.Log("Setting new game state: " + newState);
+    //    Debug.Log("Setting new game state: " + newState);
 
         currentState = newState;
     }

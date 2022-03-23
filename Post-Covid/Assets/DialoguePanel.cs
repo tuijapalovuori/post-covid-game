@@ -17,7 +17,7 @@ public class DialoguePanel : MonoBehaviour
     // If no text is given, the text is what was last set
     public void Show(string text = null) {
 
-        Debug.Log("DialoguePanel.Show called.");
+     //   Debug.Log("DialoguePanel.Show called.");
 
         gameObject.SetActive(true);
 
@@ -29,7 +29,7 @@ public class DialoguePanel : MonoBehaviour
     // Hide panel
     public void Hide() {
 
-        Debug.Log("DialoguePanel.Hide called.");
+       // Debug.Log("DialoguePanel.Hide called.");
 
         gameObject.SetActive(false);  // TODO why does this not work?
 

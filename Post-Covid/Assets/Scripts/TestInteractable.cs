@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,23 +9,26 @@ public class TestInteractable : Interactable {
 
     [SerializeField]
     public List<string> dialogue;
-
     private DialogueBuffer dialogueBuffer;
-
+    private NPCSpawner spawner;
     private void Awake() {
-
+ 
+       
+     
         // Find dialogue buffer
 
         GameObject dialogueBufferGO = GameObject.FindWithTag("DialogueBuffer");
+        GameObject spawnerGO = GameObject.FindWithTag("spawner");
+        spawner = spawnerGO.GetComponent<NPCSpawner>();
 
         if (dialogueBufferGO == null) {
-            Debug.LogError("TestInteractable.Awake: DialogueBuffer's GO could not be found.");
+          //  Debug.LogError("TestInteractable.Awake: DialogueBuffer's GO could not be found.");
         }
 
         dialogueBuffer = dialogueBufferGO.GetComponent<DialogueBuffer>();
 
         if (dialogueBuffer == null) {
-            Debug.LogError("TestInteractable.Awake: DialogueBuffer component could not be found from DialogueBuffer's GO.");
+         //   Debug.LogError("TestInteractable.Awake: DialogueBuffer component could not be found from DialogueBuffer's GO.");
         }
 
     }
@@ -53,13 +57,17 @@ public class TestInteractable : Interactable {
         // Check for E key (if inputs allowed)
         if ( Input.GetKeyDown(KeyCode.E) && ( GameState.GetCurrentState() == GAMESTATE.PLAYING) ) {
             Debug.Log("E key pressed!");
+            spawner.stop = true; // Make NPC to stop
             TriggerInteraction();
         }
     }
 
     protected override void TriggerInteraction() {
-        Debug.Log("Interaction triggered!");
+      //  Debug.Log("Interaction triggered!");
+        
 
         dialogueBuffer.GiveLines(dialogue);
+
+        //spawner.stop = false; // Make NPC walk
     }
 }

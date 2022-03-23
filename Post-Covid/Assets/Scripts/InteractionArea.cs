@@ -15,7 +15,7 @@ public class InteractionArea : MonoBehaviour
             return;
         }
 
-        Debug.Log("Interaction area entered!");
+      //  Debug.Log("Interaction area entered!");
 
         interactable.InteractionAreaEntered();
     }
@@ -28,7 +28,7 @@ public class InteractionArea : MonoBehaviour
             return;
         }
 
-        Debug.Log("Interaction area exited!");
+       // Debug.Log("Interaction area exited!");
 
         interactable.InteractionAreaExited();
     }
