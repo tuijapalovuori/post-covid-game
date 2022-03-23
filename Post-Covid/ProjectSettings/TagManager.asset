@@ -6,6 +6,7 @@ TagManager:
   tags:
   - UIHandler
   - DialogueMaster
+  - InteractableNPC
   layers:
   - Default
   - TransparentFX

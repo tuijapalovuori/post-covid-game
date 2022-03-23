@@ -1171,27 +1171,92 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740809, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_Name
-      value: NPC1
+      value: Mike
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740809, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: m_TagString
+      value: InteractableNPC
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: id
-      value: NPC1
+      value: MIKE
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: dialogue.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: Hello! I am NPC 1.
+      value: Hey, long time no see! What's up?
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: dialogue.Array.data[1]
-      value: This is my second line.
+      value: Oh, I'm doing fine myself. But I could use your help with something,
+        actually.
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: dialogue.Array.data[2]
-      value: This is my third and final line. Goodbye.
+      value: I need you to find Jane and give her this mask. I think she dropped
+        it the last time we met.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[3]
+      value: Don't worry, I washed it and everything. So try to find her and give
+        her this, alright?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[4]
+      value: (You receive a cotton mask with a tiger pattern.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[5]
+      value: Thanks a bunch! I'm sure Jane will be happy to get this back as well.
+        See ya!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792789346171, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: interactable
+      value: 
+      objectReference: {fileID: 563116170}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: id
+      value: MIKE
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: Hey! It's been so long since we've seen face to face like this. How's
+        it going?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: Oh, I'm doing fine myself. But I could use your help with something,
+        actually.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: I need you to find Jane and give her this mask. I think she dropped
+        it the last time we met.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[3]
+      value: Don't worry, I washed it and everything. So try to find her and give
+        her this, alright?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[4]
+      value: (You receive a cotton mask with a tiger pattern.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[5]
+      value: Thanks a bunch! I'm sure Jane will be happy to get this back as well.
+        She shouldn't be too far, but good luck with finding her.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 482591f598bf75e459f265be4f56487e, type: 3}
@@ -1256,7 +1321,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740809, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_Name
-      value: NPC2
+      value: Jane
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740809, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: m_TagString
+      value: InteractableNPC
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: id
@@ -1274,8 +1343,31 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[1]
       value: This is the second line. Goodbye.
       objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: id
+      value: JANE
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: Hey! Happy birthday! Can't wait for the party tonight.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+--- !u!114 &563116170 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+  m_PrefabInstance: {fileID: 517638609}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8d0ae3180f2ebf4c829ee656d0de4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &568254222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1297,7 +1389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33
+      value: 39.33
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1305,7 +1397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.48
+      value: 32.91
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1339,6 +1431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FRIEND3
       objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740809, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: m_TagString
+      value: InteractableNPC
+      objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: id
       value: FRIEND3
@@ -1358,6 +1454,18 @@ PrefabInstance:
     - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: dialogue.Array.data[2]
       value: This is my third and final line. Goodbye.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: id
+      value: FRIEND3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: A party? You can count me in!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 482591f598bf75e459f265be4f56487e, type: 3}
@@ -1880,7 +1988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 27
+      value: 27.33
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1888,7 +1996,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.48
+      value: 32.91
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1922,6 +2030,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FRIEND1
       objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740809, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: m_TagString
+      value: InteractableNPC
+      objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: id
       value: FRIEND1
@@ -1941,6 +2053,18 @@ PrefabInstance:
     - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: dialogue.Array.data[2]
       value: This is my third and final line. Goodbye.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: id
+      value: FRIEND1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: A party? Sure, I'll be there!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 482591f598bf75e459f265be4f56487e, type: 3}
@@ -2064,7 +2188,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.17121495, y: 5.4261945e-10, z: 9.431588e-11, w: 0.9852337}
+  m_LocalRotation: {x: 0.17121497, y: 1.7212774e-10, z: 3.0053335e-11, w: 0.9852337}
   m_LocalPosition: {x: 28.6, y: 5, z: -6.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2126,7 +2250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30
+      value: 33.33
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2134,7 +2258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.48
+      value: 32.91
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740804, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2168,6 +2292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FRIEND2
       objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740809, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: m_TagString
+      value: InteractableNPC
+      objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: id
       value: FRIEND2
@@ -2187,6 +2315,18 @@ PrefabInstance:
     - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: dialogue.Array.data[2]
       value: This is my third and final line. Goodbye.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: id
+      value: FRIEND2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: A party? Sounds great! I'll be there for sure.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 482591f598bf75e459f265be4f56487e, type: 3}
@@ -2784,7 +2924,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1465011527}
-  m_LocalRotation: {x: 0.17121494, y: -1e-45, z: -0, w: 0.9852337}
+  m_LocalRotation: {x: 0.17121495, y: -1e-45, z: -0, w: 0.9852337}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3659,7 +3799,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740809, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: m_Name
-      value: NPC3
+      value: Waiting Guy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752182792009740809, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: m_TagString
+      value: InteractableNPC
       objectReference: {fileID: 0}
     - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: id
@@ -3672,6 +3816,22 @@ PrefabInstance:
     - target: {fileID: 4752182792009740810, guid: 482591f598bf75e459f265be4f56487e, type: 3}
       propertyPath: dialogue.Array.data[0]
       value: I am NPC 3. I only have one line. Goodbye.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: id
+      value: WAITING_GUY
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: What am I doing?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278955323040036500, guid: 482591f598bf75e459f265be4f56487e, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: I'm just waiting for someone.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 482591f598bf75e459f265be4f56487e, type: 3}

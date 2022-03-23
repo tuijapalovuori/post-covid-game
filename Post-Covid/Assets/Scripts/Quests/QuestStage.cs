@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // A QuestStage object represents one stage of a quest.
-// It has a list of required actions (may be simply 1)
-// and a list that keeps track of the completed actions.
+// It has a list of required actions (may be simply 1),
+// a list that keeps track of the completed actions
+// and a list of dialogue changes that will be done
+// once the stage is completed.
 // NOTE: Sets would probably be better than lists for performance
 
 public class QuestStage
@@ -21,12 +23,30 @@ public class QuestStage
     // List of actions that have been completed
     private List<Action> completedActions;
 
-    public QuestStage(string desc, List<Action> required_actions) {
+    // List of dialogue changes to do once the stage is completed
+    private readonly List<DialogueChange> dialogueChanges;
+
+    public QuestStage(string desc, List<Action> required_actions, List<DialogueChange> dialogue_changes = null) {
 
         Description = desc;
 
         requiredActions = required_actions;
         completedActions = new List<Action>();
+
+        dialogueChanges = dialogue_changes;
+
+        IsComplete = false;
+    }
+
+    // Overloaded constructor for passing only one dialogue change
+    public QuestStage(string desc, List<Action> required_actions, DialogueChange dialogue_change) {
+
+        Description = desc;
+
+        requiredActions = required_actions;
+        completedActions = new List<Action>();
+
+        dialogueChanges = new List<DialogueChange> { dialogue_change };
 
         IsComplete = false;
     }
@@ -90,7 +110,16 @@ public class QuestStage
         if ( requiredActions.Count == completedActions.Count ) {
 
             Debug.Log("QuestStage.TryAdvanceStage: Stage completed. Stage description: " + Description);
+
             IsComplete = true;
+
+            // Execute dialogue changes if there are any
+            if (dialogueChanges != null) {
+
+                Debug.Log("Changing dialogue...");
+
+                DialogueChanger.ChangeDialogue(dialogueChanges);
+            }
         }
 
         // Return true as the action did advance the stage
