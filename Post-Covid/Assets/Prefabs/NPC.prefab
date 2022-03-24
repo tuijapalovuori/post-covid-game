@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4752182792009740804}
   - component: {fileID: 4752182792009740811}
-  - component: {fileID: 4752182792009740810}
+  - component: {fileID: 7278955323040036500}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -48,7 +48,7 @@ CapsuleCollider:
   m_Height: 2.5
   m_Direction: 1
   m_Center: {x: -0.1, y: 0, z: 0}
---- !u!114 &4752182792009740810
+--- !u!114 &7278955323040036500
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,9 +57,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4752182792009740809}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fe0fb04388a4a44da774698de29f7e2, type: 3}
+  m_Script: {fileID: 11500000, guid: d8d0ae3180f2ebf4c829ee656d0de4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 
   interactionPrompt: Talk (E)
   dialogue: []
 --- !u!1 &4752182792789346169
@@ -119,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f12f4e80b1a5d014aa3c66a2e2a68c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactable: {fileID: 4752182792009740810}
+  interactable: {fileID: 7278955323040036500}
 --- !u!1001 &4752182792318367653
 PrefabInstance:
   m_ObjectHideFlags: 0

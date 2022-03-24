@@ -16,20 +16,73 @@ public static class QuestSystem
     // List of all Quests
     private static List<Quest> ALL_QUESTS = new List<Quest> {
 
-        new Quest( "Test Quest", new Action( ACTION_TYPE.GAME_STARTED ), new List<QuestStage> {
-            new QuestStage( "Find NPC 1 and talk to them.", new List<Action>{
-                new Action( ACTION_TYPE.TALKED_TO, "NPC1" )
-            } ),
-            new QuestStage( "Find NPC 2 and talk to them.", new List<Action>{
-                new Action( ACTION_TYPE.TALKED_TO, "NPC2" )
-            } ),
-            new QuestStage( "Find NPC 3 and talk to them.", new List<Action>{
-                new Action( ACTION_TYPE.TALKED_TO, "NPC3" )
-            } )
+        new Quest( "Getting Out There", new Action( ACTION_TYPE.GAME_STARTED ), new List<QuestStage> {
+
+            new QuestStage(
+                
+                "You haven't seen Mike face to face in a long time. Go greet him.",
+
+                new List<Action>{
+                    new Action( ACTION_TYPE.TALKED_TO, "MIKE" )
+                },
+
+                new List<DialogueChange>{
+
+                    new DialogueChange(
+                        "MIKE",
+                        new List<string>{ "Did you give Jane her mask yet?" }
+                    ),
+
+                    new DialogueChange(
+                        "JANE",
+                        new List<string>{
+                            "(You give her the tiger-patterned mask.)",
+                            "Oh! My mask! Thank you so much!",
+                            "Mike was the one that picked it up? Well, thank him for me, then.",
+                            "See you at the party tonight!"
+                        }
+                    )
+                }
+            ),
+
+            new QuestStage(
+
+                "Find Jane and give her her mask back.",
+
+                new List<Action>{
+                    new Action( ACTION_TYPE.TALKED_TO, "JANE" )
+                },
+
+                new List<DialogueChange>{
+
+                    new DialogueChange(
+                        "MIKE",
+                        new List<string>{
+                            "You gave Jane her mask back? That's great! I knew I could count on you.",
+                            "Listen, I gotta go soon, but I'll see you again at the party. Bye for now!"
+                        }
+                    ),
+
+                    new DialogueChange(
+                        "JANE",
+                        new List<string>{ "(She doesn't seem to have anything else to say.)" }
+                    )
+                }
+            ),
+
+            new QuestStage(
+                
+                "Tell Mike you gave the mask to Jane.",
+                
+                new List<Action>{ new Action( ACTION_TYPE.TALKED_TO, "MIKE" )},
+
+                new DialogueChange( "MIKE", new List<string>{ "(He doesn't seem to have anything else to say.)" } )
+            ),
+
         } ),
 
         new Quest( "Find birthday guests", new Action( ACTION_TYPE.GAME_STARTED ), new List<QuestStage> {
-            new QuestStage( "Find all 3 of your friends and tell them you're having a party.", new List<Action>{
+            new QuestStage( "Find three more of your friends and tell them you're having a party. (Mike and Jane are already coming!)", new List<Action>{
                 new Action( ACTION_TYPE.TALKED_TO, "FRIEND1" ),
                 new Action( ACTION_TYPE.TALKED_TO, "FRIEND2" ),
                 new Action( ACTION_TYPE.TALKED_TO, "FRIEND3" )

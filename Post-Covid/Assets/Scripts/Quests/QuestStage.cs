@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // A QuestStage object represents one stage of a quest.
-// It has a list of required actions (may be simply 1)
-// and a list that keeps track of the completed actions.
+// It has a list of required actions (may be simply 1),
+// a list that keeps track of the completed actions
+// and a list of dialogue changes that will be done
+// once the stage is completed.
 // NOTE: Sets would probably be better than lists for performance
 
 public class QuestStage
@@ -21,12 +23,30 @@ public class QuestStage
     // List of actions that have been completed
     private List<Action> completedActions;
 
-    public QuestStage(string desc, List<Action> required_actions) {
+    // List of dialogue changes to do once the stage is completed
+    private readonly List<DialogueChange> dialogueChanges;
+
+    public QuestStage(string desc, List<Action> required_actions, List<DialogueChange> dialogue_changes = null) {
 
         Description = desc;
 
         requiredActions = required_actions;
         completedActions = new List<Action>();
+
+        dialogueChanges = dialogue_changes;
+
+        IsComplete = false;
+    }
+
+    // Overloaded constructor for passing only one dialogue change
+    public QuestStage(string desc, List<Action> required_actions, DialogueChange dialogue_change) {
+
+        Description = desc;
+
+        requiredActions = required_actions;
+        completedActions = new List<Action>();
+
+        dialogueChanges = new List<DialogueChange> { dialogue_change };
 
         IsComplete = false;
     }
@@ -81,7 +101,7 @@ public class QuestStage
 
         completedActions.Add(action);
 
-        Debug.Log("QuestStage.TryAdvanceStage: Stage advanced. Stage progress: " + GetProgress());
+        Debug.Log("QuestStage.TryAdvanceStage: Stage advanced. Stage progress: " + GetProgressRendered());
 
         // If the amount of required and completed actions are equal, the stage is complete
         // NOTE: This assumes that the completed actions only include actions from the
@@ -90,15 +110,30 @@ public class QuestStage
         if ( requiredActions.Count == completedActions.Count ) {
 
             Debug.Log("QuestStage.TryAdvanceStage: Stage completed. Stage description: " + Description);
+
             IsComplete = true;
+
+            // Execute dialogue changes if there are any
+            if (dialogueChanges != null) {
+
+                Debug.Log("Changing dialogue...");
+
+                DialogueChanger.ChangeDialogue(dialogueChanges);
+            }
         }
 
         // Return true as the action did advance the stage
         return true;
     }
 
-    // A method to return the stage progress numerically as a string (e.g. 2/5).
-    public string GetProgress() {
-        return completedActions.Count + "/" + requiredActions.Count;
+    // A method to return a textual representation of the current progress (in form (x/y))
+    public string GetProgressRendered() {
+        return "(" + completedActions.Count + "/" + requiredActions.Count + ")";
+    }
+
+    // Returns whether this stage only requires one action
+    // (Used by UI to decide whether or not to show stage progress)
+    public bool IsSingleAction() {
+        return requiredActions.Count == 1;
     }
 }

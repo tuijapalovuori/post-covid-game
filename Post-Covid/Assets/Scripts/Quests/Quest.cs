@@ -37,6 +37,21 @@ public class Quest
         currentStage = 0;
     }
 
+    // For UI
+    public string GetCurrentStageDescription() {
+        return questStages[currentStage].Description;
+    }
+
+    // For UI
+    public string GetCurrentStageProgress() {
+        return questStages[currentStage].GetProgressRendered();
+    }
+
+    // For UI
+    public bool CurrentStageIsSingleAction() {
+        return questStages[currentStage].IsSingleAction();
+    }
+
     // Tries to advance quest with given action. Return value tells whether this was successful.
     // Out parameter was_started tells whether the action given started this quest.
     public bool TryAdvanceQuest(Action action, out bool was_started) {
